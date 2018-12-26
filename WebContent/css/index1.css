@@ -1,0 +1,72 @@
+@charset "gb2312";
+/* css */
+* { margin: 0; padding: 0 }
+body { font: 15px "Microsoft YaHei", Arial, Helvetica, sans-serif; color: #555; background: #efefef; line-height: 1.5; }
+img { border: 0; display: block }
+ul, li { list-style: none; }
+a { text-decoration: none; color: #555 }
+a:hover { text-decoration: none; color: #000; }
+span{float:right;font-size:15px;color:#555}
+.clear { clear: both; }
+.blank { height: 20px; overflow: hidden; width: 100%; margin: auto; clear: both }
+.f_l { float: left }
+.f_r { float: right }
+.box { width: 1000px; margin: auto; overflow: hidden; clear: both; }
+.nobox { width: 100% }
+.c_white { background: #fff }
+article { width: 1000px; margin: auto; overflow: hidden; padding: 20px 0 }
+.container { width: 1000px; margin: auto }
+/*header*/
+header { width: 100%; background: #fff; overflow: hidden; box-shadow: 0 1px 1px rgba(0,0,0,.04); }
+.logo { text-align: center; font-size: 22px; padding: 20px 0 }
+nav { width: 1000px; margin: 0 auto 20px; text-align: center; border-bottom: #000 1px solid; border-top: #000 1px solid; overflow: hidden }
+nav li { display: inline; line-height: 40px; padding: 0 20px }
+.newsbox { width: 50%; background: #fff; margin-top: 20px }
+.newsbox ul { margin: 20px; }
+.newstitle { margin: 20px; line-height: 30px; border-bottom: #000 1px solid; }
+.newstitle span { float: right; font-size: 18px }
+.newstitle span a { color: #000; }
+.newstitle b { background: #333; width: 118px; display: block; font-size: 14px; font-weight: normal; color: #FFF; text-align: center }
+.newsli li { padding-left: 10px; line-height: 30px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.blogs { width: 66%; float: left }
+.bloglist { background: #FFF; overflow: hidden; padding: 20px; margin-bottom: 20px; }
+.bloglist h2 { font-size: 18px; position: relative }
+.bloglist h2:before { content: ""; width: 3px; height: 26px; position: absolute; left: -20px; top: 0; background: #333 }
+.bloglist p { overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 3; line-height: 24px; height: 72px; margin: 10px 0 0 }
+aside { width: 32%; float: right }
+
+.paihang { background: #FFF; overflow: hidden; margin-top: 20px }
+.paihang h2 { font-size: 16px; padding: 8px 20px; position: relative }
+.paihang h2:after { content: ""; background-color: #282828; left: 20px; width: 60px; height: 2px; bottom: 0; position: absolute; -webkit-transition: 0.5s; -moz-transition: 0.5s; -ms-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
+.paihang ul { padding: 10px 20px }
+.paihang:hover ::after { width: 90px; }
+.paihang ul li { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; line-height: 26px }
+footer { width: 100%; text-align: center; background: #FFF; padding: 10px 0; line-height: 26px; border-top: #333 1px solid; }
+/*list*/
+.place { margin: 10px 0; width: 100%; overflow: hidden; background: #fff; }
+.place a { display: block; float: left; padding: 5px 0; background: #fff; margin: 0 10px; width: 100px; text-align: center }
+.pagelist { text-align: center; color: #666; width: 100%; clear: both; margin: 25px 0 10px 0; padding-top: 20px }
+.pagelist a { color: #666; margin: 0 2px 10px; border: 1px solid #fff; padding: 5px 10px; background: #FFF; display: inline-block; }
+.pagelist a:hover { color: #333; }
+.pagelist > b { border: 1px solid #333; padding: 5px 10px; background: #333; color: #FFF }
+a.curPage { color: #333; font-weight: bold; }
+/*about*/
+.newsview { padding: 20px; overflow: hidden; background: rgba(255,255,255,1); margin: 20px 0 }
+.newsview h2 { font-size: 16px; width: 120px; height: 30px; line-height: 30px; text-align: center; background: #333; color: #fff; margin: 10px 0; font-weight: normal; }
+.news_infos { padding-bottom: 20px }
+
+ @media only screen and (max-width: 767px) {
+nav, article { width: 100% }
+.box { width: 94% }
+aside { display: none }
+.sbox { width: 100%; margin: 0 auto 10px }
+.sbox.ml { margin-left: 0; }
+.blogs { width: 100% }
+.newsbox { width: 100% }
+nav { border: none }
+#starlist { width: 90%; margin: auto; }
+nav li { width: 33%; padding: 0; display: block; float: left; border-top: 1px solid #333; border-bottom: 1px solid #333; }
+nav li:nth-child(n+4) { border-top: none }
+nav li:nth-child(2), nav li:nth-child(5) { border-left: 1px solid #333; border-right: 1px solid #333; }
+.infosbox { width: 100% }
+}

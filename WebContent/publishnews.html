@@ -1,0 +1,49 @@
+<!doctype html>
+<head>    
+    <meta charset="UTF-8">
+    <title>发布新闻</title>
+    <link href="css/demo.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>    
+    <section id="getintouch" >
+        <div class="container" style="border-bottom: 0;">
+            <h1>
+                <span>发布新闻</span>
+            </h1>
+        </div>
+        <div class="container">
+            <form class="contact" action="addnews" method="post">           
+            <div class="row clearfix">
+                <div class="lbl">
+                    <label for="stitle">
+                        标题</label>
+                </div>
+                <div class="ctrl">
+                   	<input name="ntitle" type="text"  placeholder="标题" required>
+                </div>
+            </div>     
+            
+            <div class="row clearfix">
+                <div class="lbl">
+                    <label for="scontent">
+                        内容</label>
+                </div>
+                <div class="ctrl">
+                    <textarea id="ncontent" name="ncontent" rows="6" cols="10"></textarea>
+                </div>
+            </div>
+            
+            
+            
+           
+            <div class="row  clearfix">
+                <div class="span10 offset2">
+                    <input type="submit" name="submit" id="submit" class="submit" value="提交">
+                </div>
+            </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,15 @@
+body{font-family:'Open Sans',sans-serif;padding:20px;margin:0;background:url(../images/banner.jpg)no-repeat center 0px;background-position: center 0;
+background-size: cover;opacity:0.8;}
+.block {
+  width: 60%;
+  margin: 0 auto;  
+}
+.bottom {
+  padding: 35px 65px;
+  border-radius: 0px 0px 25px 25px;
+  -webkit-border-radius:  0px 0px 25px 25px;
+  -moz-border-radius: 0px 0px 25px 25px;
+  -o-border-radius: 0px 0px 25px 25px;
+  text-align: right;
+  border-top: 2px ;}
+@charset "UTF-8";
